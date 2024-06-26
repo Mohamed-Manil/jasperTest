@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="test2" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6646129b-f2ba-487e-af87-0dfd81875ec5">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="arts_data_adapter"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="ireport.jasperserver.url" value="http://localhost:8080/jasperserver/"/>
+	<property name="ireport.jasperserver.user" value="haddadi.manil"/>
+	<property name="ireport.jasperserver.report.resource" value="/reports/arts/test2_files/main_jrxml"/>
+	<property name="ireport.jasperserver.reportUnit" value="/reports/arts/test2"/>
+	<queryString>
+		<![CDATA[select * from arts.wilaya]]>
+	</queryString>
+	<field name="id" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+	</field>
+	<field name="created_by" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="created_by"/>
+		<property name="com.jaspersoft.studio.field.label" value="created_by"/>
+	</field>
+	<field name="creation_date" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="creation_date"/>
+		<property name="com.jaspersoft.studio.field.label" value="creation_date"/>
+	</field>
+	<field name="last_modified_by" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="last_modified_by"/>
+		<property name="com.jaspersoft.studio.field.label" value="last_modified_by"/>
+	</field>
+	<field name="last_modified_date" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="last_modified_date"/>
+		<property name="com.jaspersoft.studio.field.label" value="last_modified_date"/>
+	</field>
+	<field name="version" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="version"/>
+		<property name="com.jaspersoft.studio.field.label" value="version"/>
+	</field>
+	<field name="code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="code"/>
+		<property name="com.jaspersoft.studio.field.label" value="code"/>
+	</field>
+	<field name="designation" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="designation"/>
+		<property name="com.jaspersoft.studio.field.label" value="designation"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="227" y="24" width="100" height="30" uuid="8399d88f-8753-4430-9fd2-33d7ab505795"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[TEST 2
+]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="246" y="0" width="100" height="30" uuid="c703cbc1-7ccb-4b80-84b8-943dfcb0e089">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="34395e73-2121-483f-93a7-b34c001d3b7e"/>
+				</reportElement>
+				<text><![CDATA[designation]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="246" y="43" width="100" height="30" uuid="336478eb-f74c-4e38-8db5-c1cc47d778b8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="34395e73-2121-483f-93a7-b34c001d3b7e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{designation}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
