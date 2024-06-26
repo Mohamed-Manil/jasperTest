@@ -3,6 +3,10 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="test" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="099a39f3-76ed-4794-a6bf-6766b68472e8">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="arts_data_adapter"/>
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="ireport.jasperserver.url" value="http://localhost:8080/jasperserver/"/>
+	<property name="ireport.jasperserver.user" value="haddadi.manil"/>
+	<property name="ireport.jasperserver.report.resource" value="/reports/test_files/main_jrxml"/>
+	<property name="ireport.jasperserver.reportUnit" value="/reports/test"/>
 	<queryString>
 		<![CDATA[select * from arts.wilaya]]>
 	</queryString>
