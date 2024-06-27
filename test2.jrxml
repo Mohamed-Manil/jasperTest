@@ -7,6 +7,45 @@
 	<property name="ireport.jasperserver.user" value="haddadi.manil"/>
 	<property name="ireport.jasperserver.report.resource" value="/reports/arts/test2_files/main_jrxml"/>
 	<property name="ireport.jasperserver.reportUnit" value="/reports/arts/test2"/>
+	<subDataset name="testDataset" uuid="862407d0-9bd6-4462-8813-13ddb96f89d4">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="arts_data_adapter"/>
+		<queryString language="SQL">
+			<![CDATA[select * from arts.wilaya]]>
+		</queryString>
+		<field name="id" class="java.lang.Long">
+			<property name="com.jaspersoft.studio.field.name" value="id"/>
+			<property name="com.jaspersoft.studio.field.label" value="id"/>
+		</field>
+		<field name="created_by" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="created_by"/>
+			<property name="com.jaspersoft.studio.field.label" value="created_by"/>
+		</field>
+		<field name="creation_date" class="java.sql.Timestamp">
+			<property name="com.jaspersoft.studio.field.name" value="creation_date"/>
+			<property name="com.jaspersoft.studio.field.label" value="creation_date"/>
+		</field>
+		<field name="last_modified_by" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="last_modified_by"/>
+			<property name="com.jaspersoft.studio.field.label" value="last_modified_by"/>
+		</field>
+		<field name="last_modified_date" class="java.sql.Timestamp">
+			<property name="com.jaspersoft.studio.field.name" value="last_modified_date"/>
+			<property name="com.jaspersoft.studio.field.label" value="last_modified_date"/>
+		</field>
+		<field name="version" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="version"/>
+			<property name="com.jaspersoft.studio.field.label" value="version"/>
+		</field>
+		<field name="code" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="code"/>
+			<property name="com.jaspersoft.studio.field.label" value="code"/>
+		</field>
+		<field name="designation" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="designation"/>
+			<property name="com.jaspersoft.studio.field.label" value="designation"/>
+		</field>
+	</subDataset>
 	<queryString>
 		<![CDATA[select * from arts.wilaya]]>
 	</queryString>
@@ -61,7 +100,7 @@
 		<band height="35" splitType="Stretch"/>
 	</pageHeader>
 	<columnHeader>
-		<band height="61" splitType="Stretch">
+		<band height="30" splitType="Stretch">
 			<staticText>
 				<reportElement x="246" y="0" width="100" height="30" uuid="c703cbc1-7ccb-4b80-84b8-943dfcb0e089">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="34395e73-2121-483f-93a7-b34c001d3b7e"/>
@@ -71,9 +110,9 @@
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="125" splitType="Stretch">
+		<band height="30" splitType="Stretch">
 			<textField>
-				<reportElement x="246" y="43" width="100" height="30" uuid="336478eb-f74c-4e38-8db5-c1cc47d778b8">
+				<reportElement x="230" y="0" width="100" height="30" uuid="336478eb-f74c-4e38-8db5-c1cc47d778b8">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="34395e73-2121-483f-93a7-b34c001d3b7e"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$F{designation}]]></textFieldExpression>
